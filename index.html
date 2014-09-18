@@ -3,14 +3,24 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
 
   <body>
-    <h1>Задача 1</h1>
+    <h1>Задания</h1>
+    <p>Нажми на ссылку, чтобы открыть попап.</p>
     <ul>
-    	<li><a href="#">Вариант 1</a></li>
+      <li><a href="#" data-popup-id="popup-one">Вариант 1</a></li>
     </ul>
+    
+    <div class="b-popup__layout" data-popup="layout"></div>
+    <div id="popup-one" class="b-popup_one" data-popup="block">
+      <div class="b-popup_one__wrapper">
+        <p>Текст попапа варианта 1</p>
+      </div>
+      <a class="b-popup_one__close" href="#" data-popup="close">x</a>
+    </div>
   </body>
 
 </html>
