@@ -22,7 +22,7 @@ body {
   color: #0d5d76;
   text-decoration: none;
 }
-.b-popup__layout {
+.b-popup_one__layout {
   position: fixed;
   top: 0;
   left: 0;
