@@ -12,8 +12,10 @@
     <p>Нажми на ссылку, чтобы открыть попап.</p>
     <ul>
       <li><a href="#" data-popup-id="popup-one">Вариант 1</a></li>
+      <li><a class="c-popup__trigger" href="#popup-two">Вариант 2</a></li>
     </ul>
     
+    <!-- Variant 1 -->
     <div class="b-popup_one__layout" data-popup="layout"></div>
     <div id="popup-one" class="b-popup_one" data-popup="block">
       <div class="b-popup_one__wrapper">
@@ -21,6 +23,17 @@
       </div>
       <a class="b-popup_one__close" href="#" data-popup="close">x</a>
     </div>
-  </body>
+    <!-- /Variant 1 -->
 
+    <!-- Variant 2 -->
+    <div class="b-popup_two__layout c-popup_two__layout"></div>
+    <div id="popup-two" class="b-popup_two c-popup_two">
+      <div class="b-popup_two__wrapper">
+        <p>Текст попапа варианта 2</p>
+      </div>
+      <a class="b-popup_two__close c-popup__close" href="#">x</a>
+    </div>
+    <!-- /Variant 2 -->
+
+  </body>
 </html>
