@@ -54,12 +54,12 @@ var popupOne = new PopupOne();
  * Variant 2
  * @options module options 
  ** @trigger button to open the popup
- ** @close button to close the popup
+ ** @closer button to close the popup
  */
 
 var PopupTwo = function(options) {
   this._trigger = options.trigger || '.popup-trigger';
-  this._closer = options.close || '.popup-close';
+  this._closer = options.closer || '.popup-close';
   
   $(document).on('click', this._trigger, this._onClickTrigger.bind(this));
   $(document).on('click', '.c-popup_two__layout', this._onClickClose.bind(this));
@@ -109,5 +109,5 @@ PopupTwo.prototype._setCoords = function (elem) {
 
 var popupTwo = new PopupTwo({
   trigger: '.c-popup__trigger',
-  close: '.c-popup__close'
+  closer: '.c-popup__close'
 });
