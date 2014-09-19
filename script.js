@@ -91,15 +91,13 @@ PopupTwo.prototype._close = function() {
   }
 
 PopupTwo.prototype._setCoords = function (elem) {
-  var scrollTop = $(window).scrollTop(),
-      scrollLeft = $(window).scrollLeft(),
-      winHeight = $(window).height(),
+  var winHeight = $(window).height(),
       winWidth = $(window).width(),
       popupHeight = elem.outerHeight(),
       popupWidth = elem.outerWidth();
       
-  var top = (winHeight - popupHeight)/2 + scrollTop,
-      left = (winWidth - popupWidth)/2 + scrollLeft;
+  var top = (winHeight - popupHeight)/2,
+      left = (winWidth - popupWidth)/2;
       
   elem.css({
     top: top + 'px',
