@@ -2,8 +2,9 @@
 <html>
 
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
     <script src="script.js"></script>
   </head>
 
@@ -11,8 +12,15 @@
     <h1>Задания</h1>
     <p>Нажми на ссылку, чтобы открыть попап.</p>
     <ul>
-      <li><a href="#" data-popup-id="popup-one">Вариант 1</a></li>
-      <li><a class="c-popup__trigger" href="#popup-two">Вариант 2</a></li>
+      <li>
+        <a href="#" data-popup-id="popup-one">Вариант 1</a>
+      </li>
+      <li>
+        <a class="c-popup_two__trigger" href="#popup-two">Вариант 2</a>
+      </li>
+      <li>
+        <a class="c-popup_three__trigger" href="#popup-three">Вариант 3</a>
+      </li>
     </ul>
     
     <!-- Variant 1 -->
@@ -24,7 +32,7 @@
       <a class="b-popup_one__close" href="#" data-popup="close">x</a>
     </div>
     <!-- /Variant 1 -->
-
+    
     <!-- Variant 2 -->
     <div class="b-popup_two__layout c-popup_two__layout"></div>
     <div id="popup-two" class="b-popup_two c-popup_two">
@@ -34,6 +42,22 @@
       <a class="b-popup_two__close c-popup__close" href="#">x</a>
     </div>
     <!-- /Variant 2 -->
-
+    
+     <!-- Variant 3 -->
+    <script type="text/template" id="popup-three-tmp">
+      <div class="b-popup_three__layout c-popup_three__layout"></div>
+      <div id="<%- id %>" class="b-popup_three c-popup_three">
+        <div class="b-popup_three__wrapper">
+          <%= content %>
+        </div>
+        <a class="b-popup_three__close c-popup__close" href="#">x</a>
+      </div>
+    </script>
+    
+    <script type="text/template" id="popup-three-tmp-content">
+        <p>Текст попапа варианта 3</p>
+    </script>
+    <!-- /Variant 3 -->
   </body>
+
 </html>
