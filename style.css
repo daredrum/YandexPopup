@@ -66,3 +66,36 @@ body {
   background: #000;
   background: rgba(0, 0, 0, 0.3);
 }
+
+/*** Variant 3 **/
+.b-popup_three {
+  position: fixed;
+  z-index: 200;
+  display: none;
+  opacity: 0;
+  border: 4px solid #33c6f4;
+  background: #ffffff;
+}
+.b-popup_three__wrapper {
+  padding: 15px 30px;
+}
+.b-popup_three__close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font: 16px Verdana, sans-serif;
+  color: #0d5d76;
+  text-decoration: none;
+}
+.b-popup_three__layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.3);
+}
